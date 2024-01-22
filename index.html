@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+   <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img id="logo" src="images/logo1.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">about</a> </li>
+          <!-- <li> <a href="#room">room</a> </li> -->
+          <li> <a href="#services">room</a> </li>
+          
+          <li> <a href="#gallary">gallary</a> </li>
+          <li> <a href="#blog">Menu</a> </li>
+          <li> <a href="#contact">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+       </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Make Memories</h1>
+      
+  
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>A luxury everyone can afford
+        </h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>Welcome To Hotel JVW Arena.</h3>
+          <p>Founded in new opening your JVW Arena & Restaurant become one of the best luxury hotels worldwide. 
+            We provides a comfortable and luxury experience to our guest.</p>
+            <p> It is a  Luxury Hotel with all kinds of facilities including Luxury guest room, finding Resturant,
+             Coffee Mocktails, Conference Hall To meet all the needs of our guests .Our Rooms are comfortable, Luxurious ,catering Unique Flavour, 
+            Advance facilities of the business centre at any time to provide you with thoughts fast services</p>
+         
+        </div>
+        <div class="right">
+          <img id="abt" src="images/About (2).jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        
+           
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script> -->
+
+
+  
+
+
+  
+  <!-- </section> -->
+
+  <!-- <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>LAST MINUTE!</h5>
+        <h2> <span>Incredible!</span> Are you coming today</h2>
+      </div>
+
+      <div id="time" class="flex1 mtop"> </div>
+    </div>
+  </section>
+  <script src="js/jquery.countdown.js" charset="utf-8"></script>
+  <script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#time').countdown('2024/01/01', function(event) {
+      $(this).html(event.strftime(
+       
+      ));
+    });
+  </script> -->
+
+
+  <section class="offer mtop" id="services">
+    <div class="container">
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o1.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe single Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Maintain your fitness routine with complimentary access to our well-equipped fitness center.
+
+                       Indulge in the epitome of comfort and luxury with our
+                     Deluxe Single Room.</p>
+            <h5>From 1599</h5>
+            
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o2.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Hotel JVW Arena , is a star-rated hotel which would awe your
+               guests with its grandeur, lavishness, and state of the art amenities.
+                Perfect for your special day.</p>
+            <h5>From 1899</h5>
+            
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o3.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4> Premium Deluxe </h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Hotel JVW Arena , is a star-rated hotel which would awe your guests
+               with its grandeur, lavishness, and state of the art amenities.
+                Perfect for your special day.</p>
+            <h5>From 2199</h5>
+            
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o4.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Suite Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Hotel JVW Arena , is a star-rated hotel which
+               would awe your guests with its grandeur, lavishness,
+                and state of the art amenities. Perfect for your special day.
+
+            </p>
+            <h5>From 4199</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+ 
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="images/13.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/10.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/explore.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/4.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/11.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/6.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/12.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/14.jpeg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <section class="blog top" id="blog">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR MENU</h5>
+        <h3> You will receive every items on time</h3>
+      </div>
+
+      
+    <div class="content grid mtop">
+      <div class="box">
+        <div class="img">
+          <img src="images/menu.jpeg" alt="">
+          <span>HOTEL</span>
+        </div>
+        <div class="text">
+          <div class="flex">
+          
+          </div>
+         
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/menu1.jpeg" alt="">
+          <span>HOTEL</span>
+        </div>
+        <div class="text">
+          <div class="flex">
+           
+          </div>
+         
+          
+        </div>
+      </div>
+      <div class="box">
+        <div class="img">
+          <img src="images/menu2.jpeg" alt="">
+          <span>HOTEL</span>
+        </div>
+        <div class="text">
+          <div class="flex">
+           
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content grid mtop">
+    <div class="box">
+      <div class="img">
+        <img src="images/menu3.jpeg" alt="">
+        <span>HOTEL</span>
+      </div>
+      <div class="text">
+        <div class="flex">
+        
+        </div>
+       
+      </div>
+    </div>
+    <div class="box">
+      <div class="img">
+        <img src="images/menu4.jpeg" alt="">
+        <span>HOTEL</span>
+      </div>
+      <div class="text">
+        <div class="flex">
+         
+        </div>
+       
+        
+      </div>
+    </div>
+    <div class="box">
+      <div class="img">
+        <img src="images/menu5.jpeg" alt="">
+        <span>HOTEL</span>
+      </div>
+      <div class="text">
+        <div class="flex">
+         
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content grid mtop">
+  <div class="box">
+    <div class="img">
+      <img src="images/menu6.jpeg" alt="">
+      <span>HOTEL</span>
+    </div>
+    <div class="text">
+      <div class="flex">
+      
+      </div>
+     
+    </div>
+  </div>
+  <div class="box">
+    <div class="img">
+      <img src="images/menu7.jpeg" alt="">
+      <span>HOTEL</span>
+    </div>
+    <div class="text">
+      <div class="flex">
+       
+      </div>
+     
+      
+    </div>
+  </div>
+  <div class="box">
+    <div class="img">
+      <img src="images/menu8.jpeg" alt="">
+      <span>HOTEL</span>
+    </div>
+    <div class="text">
+      <div class="flex">
+       
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>
+  </section>
+
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3565.705761618912!2d84.9270744754307!3d26.65790177679989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDM5JzI4LjUiTiA4NMKwNTUnNDYuNyJF!5e0!3m2!1sen!2sin!4v1705574138972!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+
+    
+  <!-- Contact Me section Start -->
+  <div class="container top">
+      <div class="subscribe" id="contact">
+       
+          <input type="email" placeholder="Your Email address">
+        
+        </div>
+      </div>
+ <h1  id="cuhd">Contact Us</h1>
+  <section class="contactus">
+   
+   <div class="contact-section">
+
+    <div class="contact-method">
+      <img src="https://th.bing.com/th?id=OIP.mMzZ6OsYd7BWk4kSXGA70AHaHx&w=244&h=256&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Instagram Icon">
+      <a href="https://www.instagram.com/jvwarena/" target="_blank">Instagram</a>
+    </div>
+
+    <div class="contact-method">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAPoA+gMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAwQFAgEG/9oACAEBAAAAAPpQAAAAAAAAAAAAAAAAAAAAAAAAAAAABFU4ktyDz0BD32APMvPDS0q9DRnAZVbb7AMmgB75f1gDDrTbUoFfCAJrTVAYdZ1qXwZWeALG30AyaAm0rnpjUwCzt+gEGCDq1YmoVAC/rACGrlAAAaOoAMLjjkAAGtfAGZmgAAN2wAOMDgAAHX0XoAVsXkAAL+sABWoUgABvTgAYVcAAXdgABBh8gAOt+QAAgyIAANm4AACvkwADV0AAA8q5kAA1r4ACvW8hq8ACbXsAACpn1QBPoXgAAEdSCLh1LPamAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEBQH/2gAKAgIQAxAAAAAAAAAAAAAAAAAAJQlCu16AF+WjUAasOjERsp0V3U6QOhx4W5OhGZOrfyQPJZtufYBs5t2byVGqq+UNfPAhbg6wBqw6MbwAAqvxdQA186/KAAGfbl3AHvmvnXZgADB1oWgBt5lucACnTj6QAHvmjHox+xAhbh6nkgD3ydU678tlAFV+TpRkABZTflsp9j5KFtGqq8AAAAAAAAAAAAAAAAAD/8QANhAAAgEDAQQHBQcFAAAAAAAAAQIDAAQRMBIhMVEFIjJAQUJxEBMgYaEUFTNSU3CRYmNygYL/2gAIAQEAAT8A/bKSaKLtuBR6QjHBGNfeP9r60t/Ee0jCkljkGUcH4cjJGjPKIYy9RyLIgZTuOmSACScCp70tlYtw/N8IJBBBwat73yy/6asgDNPdwJ59o8lqW+kfcg2B9atojFEAe0d7aN++ZETkKt52gbmp4ikdZFDKcg6V5cbbGND1R9ToEk8ST7LO3LESuN3l0rw5uZfX2QzvC2Rw8RUUyTLlT6jQupTFCxHE7hpRe4UhpMt/SKbpBvJGBUImumzKxMY0bwYuZfX2o7IwZTg1Beq26Tqnn4Vn4ukG60achnTt7dpzyQcTSqqKFUYA0b9MSK/MfDFcSw9lt3I1FfRN2+oaDBhkEEfBffj/API0rWBZpCGO4DNKoUAAYA0riL30TL48RRBBwfiV3Q5ViD8qS+nXjhqXpBPNGaF7bnxI9RV48ckgZGz1dLo/8ST/AA01niZ2TawwOMGru1L5kQdbxHdOjh1pT8hp3Yxcy/M5pZpk7MjCndpG2m49z6PXETtzbTv496SD0PdbVdi3jHyz/OnIgkRkPAipI2jcow3jucaGR1TmaGpcW6zryYcDTxvG2y4we5WEeXZ/y6zNbSrhnQj1qW2hG9LhPQmjuPcLeL3USr48TrXUXupTyO8dxsoduTbPBNeeETIV8fA06MjFWGCNdEaRlReJqKNYkVF8O4TwJMN/HwNS28sPEZHMa1pb+5XabtnucltA+SyD1G6pxbqcRbR5kndp2lrsYkkHW8B3OS9hTh1zU1zLNuY4XkNIAkgAZJq2tBHh5N768szxb/dFl5g194p+maPSPKL+TTX854bK08kkhy7ltOG3km7I3fmNQW8cI3b28T3GW0ikyey3MVJZzR8BtDmNOO2ml4JgczuqKxjTe/XNY7o8UcnbQGnsIj2WZaawk8rqaNncDyA+hr7LcfpGvstx+kaFncHyfWlsJTxZRS9Hx+Z2NJBDH2UH7o//xAAoEQACAQMBBwQDAAAAAAAAAAABAgMAESASECEwMUFCUgQyUGETInH/2gAIAQIBAT8A+JCM3IUYpPGuWYhvGCOeUUXc210VxvoenHVqlKj9FGKexf4KkiD7+RplZTYjbGupwMSLipCiblAvjC10t1GwgEWIpoB2m1GGQdKhVlfepxkJCMRksRGlkbhTG0Zyge66eo4XqD7RkCQbikmvuYEHgyNqcnOJ9S26jgTPpWw5ngAkG4pZ/IUDcXxdwguaYliScgCTYV+KTxoQMeZApIkTF5VT7NMxY3PAWV1+xQnXqCKEiHuFa08hRkQdwozoOQJppnb6HzH/xAAuEQACAQMCBAQEBwAAAAAAAAABAgMABBESICEwMkEQMUJSExRQYSIjM1FxcpH/2gAIAQMBAT8A+ktLGnUwoTwn10CCMg72uNMxU9NA52z3ByVQ/wAnxjkeM5Bprs+lagDn8xycny2yfqP/AGNQztHwPFaR1cZU+Mz6I2O1Tg5wKiEsv4nJ0/ttuU0yZ7HwVipyDiku2HUM0tzEe+KuHRouDA8dsIDSqCNzzhtSSJ38xRx25NsMzLuuoyr6+x5VovFm3MoYEEZFSW5XirAjkwpojA3zxFGyOk8i2i1tqPkOQVDAgjIp7T2NTDScZB2xRtI2BSKEUKNxIUZNfMQ++mu0HSCaknkk74G2KBpPstIioMKOQ8Eb9sGmtHHSQaMMo9Br4cnsb/KEMp9BpbSQ+ZApLeNPufrH/9k=" alt="Twitter Icon">
+      <a href="https://twitter.com/your_twitter_username" target="_blank">Twitter</a>
+    </div>
+
+    <div class="contact-method">
+      <img src="data:image/jpeg;base64,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" alt="Email Icon">
+      <a href="hoteljvwarena@gmail.com">Email</a>
+    </div>
+    
+    <div class="contact-method">
+      <img src="data:image/jpeg;base64,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" alt="Facebook">
+      <a href="https://www.facebook.com/profile.php?id=61555298143281">Facebook</a>
+    </div>
+
+    <div class="contact-method">
+      <img src="https://th.bing.com/th?id=OIP.zDsa2MoFeghUwytLWnDKwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Phone Icon">
+      <p>Contact Number: 9031041800</p>
+      <p>hoteljvwarena@gmail.com</p>
+      <p>NH28A, Chhatauni-Bettiah Road, Matthiya Zirat, Motihari, Bihar, 845401
+
+       Near J.J. Kanak Hospital</p>
+    </div>
+    </div>
+    <div class="imggg">
+      <img src="images/img.jpeg" alt="">
+      
+    </div>
+    <p id="dirt">Director: Anupam Kumar</p>
+  </section>
+   
+
+                
+</body>
+
+
+</html>
